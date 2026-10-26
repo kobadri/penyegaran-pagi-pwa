@@ -10,31 +10,37 @@
 <body>
     <div class="app-container">
         <header class="app-header">
-            <div class="header-title">Penyegaran Pagi - FKKP</div>
-            <div class="header-subtitle" id="current-category-label">Kaum Beriman (1)</div>
+            <div>
+                <div class="header-title">Penyegaran Pagi - FKKP</div>
+                <div class="header-subtitle" id="current-category-label">Kaum Beriman (1)</div>
+            </div>
             <button id="menu-btn" class="menu-btn">&#9776;</button>
         </header>
         
         <main id="main-content">
-            <div class="hero-section">
-                <img src="assets/images/HOME.jpeg" alt="Penyegaran Pagi" class="hero-image">
-            </div>
+            <div class="hero-section"></div>
             <div class="date-section">
                 <h2 id="current-date-text">Selasa, 21 Oktober 2025</h2>
                 <p>Saatnya membaca Firman Tuhan</p>
             </div>
             <div class="menu-actions">
                 <button class="menu-action-btn" id="btn-hari-ini">
-                    <span class="icon">&#128197;</span> Hari Ini <span class="arrow">&rsaquo;</span>
+                    <span class="btn-left"><span class="icon">&#128197;</span> Hari Ini</span>
+                    <span class="arrow">&rsaquo;</span>
                 </button>
                 <button class="menu-action-btn" id="btn-pekan-ini">
-                    <span class="icon">&#128198;</span> Pekan Ini <span class="arrow">&rsaquo;</span>
+                    <span class="btn-left"><span class="icon">&#128198;</span> Pekan Ini</span>
+                    <span class="arrow">&rsaquo;</span>
                 </button>
                 <button class="menu-action-btn" id="btn-kaum-beriman">
-                    <span class="icon">&#128214;</span> Kaum Beriman (1) <span class="arrow">&rsaquo;</span>
+                    <span class="btn-left"><span class="icon">&#128214;</span> Kaum Beriman (1)</span>
+                    <span class="arrow">&rsaquo;</span>
                 </button>
             </div>
         </main>
+        <footer class="app-footer">
+            Penyegaran Pagi - FKKP
+        </footer>
     </div>
     <script src="app.js"></script>
 </body>
