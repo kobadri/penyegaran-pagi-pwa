@@ -1,19 +1,108 @@
 body {
-    background-color: #f0f2f5;
+    background: #e4d5bc url("assets/images/g_01_senin_01.jpg") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.app-container, .main-container, .container {
+.app-container {
     width: 100%;
     max-width: 420px;
     min-height: 100vh;
     background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background-color: #1b4d3e;
+    color: #ffffff;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.date-section {
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+}
+
+.date-section h2 {
+    font-size: 1.25rem;
+    color: #1b4d3e;
+    margin: 0 0 5px 0;
+}
+
+.date-section p {
+    font-size: 0.9rem;
+    color: #555555;
+    margin: 0;
+}
+
+.menu-actions {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-action-btn {
+    background-color: #2e5a48;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.menu-action-btn:hover {
+    background-color: #1b4d3e;
+}
+
+.menu-action-btn .icon {
+    margin-right: 10px;
+}
+
+.menu-action-btn .arrow {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
