@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (btnHariIni) {
         btnHariIni.addEventListener("click", () => {
-            alert("Membuka tampilan: Hari Ini");
+            window.location.href = "data/teks/t_04_senin_01.html";
         });
     }
 
