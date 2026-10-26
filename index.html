@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyegaran Pagi - FKKP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div id="app">
+        <!-- Home / Header View -->
+        <header id="homeView">
+            <h1 id="bookTitle">Penyegaran Pagi FKKP</h1>
+            <p id="bookSubtitle">Memuat aplikasi...</p>
+            <p id="programEyebrow"></p>
+            <div id="todayBox">
+                <span id="todayDate"></span>
+                <p id="todayMessage">Memuat jadwal hari ini...</p>
+            </div>
+            <div class="book-selector-wrap">
+                <select id="bookSelect"><option value="">Memuat buku...</option></select>
+            </div>
+        </header>
+
+        <!-- List / Main Navigation View -->
+        <main id="listView">
+            <section class="week-nav-section">
+                <div class="week-header">
+                    <h2 id="weekHeading">Pekan Bacaan 1</h2>
+                    <span id="weekPill">01 / 01</span>
+                </div>
+                <div class="week-controls">
+                    <select id="weekSelect"></select>
+                    <button type="button" id="garisButton" data-week="1">Garis Besar</button>
+                </div>
+            </section>
+            
+            <section class="days-section">
+                <div id="dayGrid" class="day-grid"></div>
+            </section>
+            
+            <div id="backendStatus" class="status-notice">Menghubungkan ke server...</div>
+        </main>
+
+        <!-- Reading View (Hidden by default) -->
+        <article id="readingView" hidden>
+            <div class="reading-header">
+                <button type="button" id="backButton">← Kembali</button>
+                <span id="readingWeekLabel"></span>
+                <div class="zoom-controls">
+                    <button type="button" id="zoomOut">-</button>
+                    <span id="zoomPercent">100%</span>
+                    <button type="button" id="zoomIn">+</button>
+                    <button type="button" id="zoomReset">Reset</button>
+                    <button type="button" id="downloadPdf">Cetak/PDF</button>
+                </div>
+            </div>
+            <div class="reading-body">
+                <span id="readingKicker"></span>
+                <h2 id="readingTitle"></h2>
+                <div id="articleContent"></div>
+                <div id="mediaArea"></div>
+            </div>
+        </article>
+        
+        <footer>
+            <p id="footerProgram">Penyegaran Pagi FKKP</p>
+        </footer>
+    </div>
+    
+    <script>
+        window.FKKP_SUPABASE_CONFIG = {
+            url: "YOUR-PROJECT-REF",
+            anonKey: "YOUR_SUPABASE"
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
