@@ -1,6 +1,5 @@
 body {
-    background: #e4d5bc url("assets/images/g_01_senin_01.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background: #d4e0d7;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,17 +14,18 @@ body {
     max-width: 420px;
     min-height: 100vh;
     background-color: #ffffff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .app-header {
     background-color: #1b4d3e;
     color: #ffffff;
-    padding: 16px 20px;
+    padding: 14px 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,12 @@ body {
 
 .header-title {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.85;
 }
 
 .menu-btn {
@@ -46,13 +51,10 @@ body {
 
 .hero-section {
     width: 100%;
-    overflow: hidden;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 220px;
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+    background-position: center;
 }
 
 .date-section {
@@ -61,48 +63,52 @@ body {
 }
 
 .date-section h2 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: #1b4d3e;
-    margin: 0 0 5px 0;
+    margin: 0 0 4px 0;
 }
 
 .date-section p {
-    font-size: 0.9rem;
-    color: #555555;
+    font-size: 0.88rem;
+    color: #666666;
     margin: 0;
 }
 
 .menu-actions {
-    padding: 20px;
+    padding: 15px 20px 25px 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .menu-action-btn {
-    background-color: #2e5a48;
+    background-color: #215a46;
     color: #ffffff;
     border: none;
-    border-radius: 25px;
-    padding: 14px 20px;
+    border-radius: 28px;
+    padding: 14px 22px;
     font-size: 1rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(33, 90, 70, 0.25);
 }
 
-.menu-action-btn:hover {
-    background-color: #1b4d3e;
+.btn-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.menu-action-btn .icon {
-    margin-right: 10px;
+.arrow {
+    font-size: 1.3rem;
 }
 
-.menu-action-btn .arrow {
-    font-size: 1.2rem;
-    font-weight: bold;
+.app-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.75rem;
+    color: #888888;
 }
